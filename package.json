@@ -4,10 +4,12 @@
   "description": "backend for afri-mart",
   "main": "index.js",
   "dependencies": {
+    "@vscode/sqlite3": "^5.0.7",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "knex": "^1.0.3",
-    "sqlite": "^4.0.23"
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "bcrypt": "^5.0.1",
