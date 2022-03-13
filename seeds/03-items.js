@@ -42,7 +42,7 @@ exports.seed = function (knex) {
           Price: "N7500",
           Qty: 3,
           image:
-            "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60https://www.costafarms.com/CostaFarms/Croton-Header-Costa-Farms-Indoor-Plant.jpg",
+            "https://media.istockphoto.com/photos/homemade-indian-chicken-tikka-masala-pizza-picture-id1340589333?b=1&k=20&m=1340589333&s=170667a&w=0&h=rQaaNq-2klpZXcZ26amIfELKxq78-9S79FycY7Kzu28=",
           items_id: 5,
         },
         {
@@ -74,7 +74,7 @@ exports.seed = function (knex) {
           Price: "N5500",
           Qty: 3,
           image:
-            "https://media.istockphoto.com/photos/junk-food-homemade-beef-burgers-on-vintage-wooden-background-picture-id1302436326?b=1&k=20&m=1302436326&s=170667a&w=0&h=MvSjb8R4lOJT_NteIiZxfIoZvXIkKucRUVeViFBLVN4=",
+            "https://media.istockphoto.com/photos/tasty-burger-with-fried-egg-picture-id1166783855?k=20&m=1166783855&s=612x612&w=0&h=6dIglFLZ08g10AvQfLxvHAIFjY_bs0GMLzpZ_15bQGs=",
           items_id: 9,
         },
       ]);

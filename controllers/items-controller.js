@@ -1,4 +1,4 @@
-const Plants = require("../models/plants-model");
+const Items = require("../api/items/items-model");
 
 exports.getItems = (req, res, next) => {
   Items.find()
@@ -14,9 +14,9 @@ exports.getItems = (req, res, next) => {
 exports.getItemsById = (req, res) => {
   const { id } = req.params;
   Items.findById(id)
-    .then((plant) => {
-      if (plant) {
-        res.json(plant);
+    .then((item) => {
+      if (item) {
+        res.json(item);
       } else {
         res.status(404).json({ message: "Could not find item by id given" });
       }
