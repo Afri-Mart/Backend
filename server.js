@@ -26,7 +26,9 @@ server.use((req, res, next) => {
 server.use("/api/auth", authRouter);
 server.use("/api/users", usersRouter);
 server.use("/api/items", itemsRouter);
-
+process.on("uncaughtException", function (err) {
+  console.log(err);
+});
 server.use("/", (req, res, next) => {
   res.status(200).json({
     status: "success",
