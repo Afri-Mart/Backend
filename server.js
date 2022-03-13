@@ -11,6 +11,17 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 server.use(cors());
+server.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Accept");
+  res.header("Content-Type", "application/json");
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  } else {
+    next();
+  }
+});
 
 server.use("/api/auth", authRouter);
 server.use("/api/users", usersRouter);
