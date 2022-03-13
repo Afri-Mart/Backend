@@ -16,6 +16,12 @@ server.use("/api/auth", authRouter);
 server.use("/api/users", usersRouter);
 server.use("/api/items", itemsRouter);
 
+server.use("/", (req, res, next) => {
+  res.status(200).json({
+    status: "success",
+    message: "Welcome to Afrimart",
+  });
+});
 server.use((err, req, res, next) => {
   // eslint-disable-line
   res.status(err.status || 500).json({
