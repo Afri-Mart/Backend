@@ -1,6 +1,6 @@
 const express = require("express");
 const helmet = require("helmet");
-//const cors = require("cors");
+const cors = require("cors");
 
 const authRouter = require("./api/auth/auth-router.js");
 const usersRouter = require("./api/users/users-router.js");
@@ -10,7 +10,7 @@ const server = express();
 
 server.use(helmet());
 server.use(express.json());
-//server.use(cors());
+server.use(cors());
 server.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
