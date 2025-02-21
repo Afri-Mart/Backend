@@ -218,3 +218,7 @@ The application is ready for deployment on platforms like Heroku, AWS, or any No
 2. Configure the database connection
 3. Run migrations on deployment
 4. Set up proper security measures (HTTPS, etc.)
+
+<img width="1918" alt="afrimart_backend" src="https://github.com/user-attachments/assets/5ee6ac31-df59-4b30-9ae5-f39055cc68ee" />
+
+
